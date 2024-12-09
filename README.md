@@ -1,6 +1,6 @@
 # Dental-Detection-ImageFiltering-Distillation
 Optimizing Root Canal Treatment Detection with Image Filtering and Deep Learning Models: A comparative study using YOLO and advanced denoising techniques on radiographic images to enhance early detection and diagnostic accuracy.
-Here’s a comprehensive and engaging GitHub `README.md` template for your project. This README includes all sections typically found in a high-quality, well-documented repository, with detailed information that presents the project attractively to potential users and contributors.
+Here’s a comprehensive and engaging GitHub README.md template for your project. This README includes all sections typically found in a high-quality, well-documented repository, with detailed information that presents the project attractively to potential users and contributors.
 
 markdown
 # Dental-ImageFiltering-DeepLearning-Distillation
@@ -48,21 +48,21 @@ The dataset consists of **1600 radiographic images** specifically annotated to i
 ## 🚀 Installation
 
 1. **Clone the repository**:
-    ```bash
+   
     git clone https://github.com/yourusername/Dental-ImageFiltering-DeepLearning-Distillation.git
     cd Dental-ImageFiltering-DeepLearning-Distillation
-    ```
+    
 
 2. **Install dependencies**:
     We recommend using a virtual environment:
-    ```bash
+    
     python3 -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    source venv/bin/activate  # On Windows use venv\Scripts\activate
     pip install -r requirements.txt
-    ```
+    
 
 3. **Download the Dataset**:
-    - Follow the instructions in the `data/README.md` to download and preprocess the dataset.
+    - Follow the instructions in the data/README.md to download and preprocess the dataset.
 
 ---
 
@@ -70,24 +70,24 @@ The dataset consists of **1600 radiographic images** specifically annotated to i
 
 ### 1. Data Preprocessing
 Prepare the dataset by applying the chosen image filtering techniques. Each filter method can be executed independently based on the dataset:
-```python
+python
 from utils.image_filters import apply_filter
 
 # Example usage
 filtered_image = apply_filter("path/to/image.jpg", method="gaussian")
-```
+
 
 ### 2. Model Training
-Train YOLO models on filtered datasets using `YOLOv5`, `YOLOv7`, or `YOLOv8` architectures:
-```bash
+Train YOLO models on filtered datasets using YOLOv5, YOLOv7, or YOLOv8 architectures:
+
 python train.py --model yolov5 --dataset /path/to/filtered_data
-```
+
 
 ### 3. Knowledge Distillation
 Leverage our knowledge distillation script to enhance model accuracy:
-```bash
+
 python knowledge_distillation.py --teacher_model yolov8 --student_model yolov5
-```
+
 
 ### 4. Evaluation
 Evaluate the model's performance:
@@ -109,10 +109,10 @@ python evaluate.py --model yolov5 --dataset /path/to/test_data
 ---
 
 ## 📚 Documentation
-Detailed documentation for each module and script is available in the `docs/` directory. Key sections include:
-- `data_preprocessing.md`: Information on image filtering techniques
-- `model_training.md`: Steps for model training and hyperparameter tuning
-- `evaluation_metrics.md`: Explanation of each evaluation metric and how it applies
+Detailed documentation for each module and script is available in the docs/ directory. Key sections include:
+- data_preprocessing.md`: Information on image filtering techniques
+- model_training.md`: Steps for model training and hyperparameter tuning
+- evaluation_metrics.md`: Explanation of each evaluation metric and how it applies
 
 ---
 
@@ -134,7 +134,7 @@ Detailed documentation for each module and script is available in the `docs/` di
 If you use this code in your research, please cite as follows:
 plaintext
 @misc{yourusername2023dental,
-  author = {Your Name and Others},
+  author = {M.F.S. Titu, M.H. Pavel, A.Z. Apurba},
   title = {Optimizing Detection of Root Canal Treatment Stages Using Image Filtering and Deep Learning},
   year = {2023},
   url = {https://github.com/yourusername/Dental-ImageFiltering-DeepLearning-Distillation}
@@ -155,13 +155,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact
 For questions or collaborations, please reach out:
-- **[Your Name](mailto:your.email@example.com)**
+- **[Md Fahim Shahoriar Titu](mdfahimshahoriar@yahoo.com)**
+- **[Mahir Hassan Pavel](mahir.pavel@northsouth.edu)**
+- **[Afifa Zain Apurba](afifa.apurba@northsouth.edu)**
 
 ---
 
 Thank you for your interest in our project! 🌟 We hope this tool serves as a valuable resource for advancing dental healthcare with deep learning and image processing.
 
-```
+
 
 Replace the placeholder values (like URLs and names) with actual details specific to your project. This README is structured to attract attention, showcase features, and guide users on usage and contribution effectively.
 .
